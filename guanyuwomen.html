@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>关于我们-北京云雀孵化网站</title>
+<meta name="Description" content=""/>
+<meta name="Keywords" content=""/>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="head">
+  <div class="logo">
+    <h1><a href="index.html"><img src="images/logo.png" height="50" alt="云雀孵化" title="云雀孵化"></a></h1>
+  </div>
+  <div class="wap-nav-btn" id="nav-btn"></div>
+  <ul class="nav">
+    <li data-menuanchor="page1"><a href="#page1">首页<i></i></a></li>
+    <li><a href="">公司介绍<i></i></a></li>
+    <li><a href="">创孵投资<i></i></a> </li>
+    <li><a href="">孵化项目<i></i></a></li>
+    <li><a href="">活动大赛<i></i></a></li>
+    <li><a href="">孵化服务<i></i></a></li>
+    <li><a href="">资讯<i></i></a></li>
+    <li><a href="">招贤纳士<i></i></a></li>
+  </ul>
+  </div>
+</header>
+<div class="gywm-banner"><img src="images/guanyuwomen.png" width="100%"></div>
+<div class="gywm-con">
+  <div class="gywm-box">
+    <div class="gywm1">
+      <div class="gywm-left"><img src="images/guanyuwomen1.png"></div>
+      <div class="gywm-right">
+        <p class="gywm-title">关于云雀孵化</p>
+        <p>北京云雀创孵企业管理有限公司于2016年7月份成立。公司的经营宗旨是利用资金、技术资源和投后顾问管理，专注于为创业企业和中小电商企业互联网+信息化升级改造提供投资，帮助企业无风险实现互联网+产业升级。</p>
+        <p class="gywm-title" style="margin-top:40px;">实力背景</p>
+        <p>云雀创孵隶属于中国投资协会投咨委电商金融发展中心。电商金融发展中心受中国投资协会投资咨询专业委员会（简称：投咨委）直辖管理。投咨委作为国家发改委批准成立且受中国投资协会直接管理的国家二级社团法人机构，由于中国投资协会具有社团法人资格的全国性社会团体性质，它在中国投资建设领域有着不可取代的权威性。为顺应发展需求，电商金融发展中心受投咨委直接领导并指导成立，力争发展为我国投融资领域专家学者和企业精英自愿组成的专业性组织机构。</p>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="gywm2">
+      <div class="gywm-left"><img src="images/guanyuwomen2.png"></div>
+      <div class="gywm-right">
+        <p>中国国商金融集团有限公司（简称“国商金融”），在中国投资协会投资咨询专业委员会电商金融发展中心的指导下开展相应经营工作 。作为一家资金实力雄厚、成就卓越的综合型、多元化大型服务企业，赋予金融和类金融服务平台投资、资本经营和国有资产管理等功能，以金融思维和方法开展财务投资、实体企业投资、资本运作、资产管理、财富管理等业务。
+          目前，国商金融的业务范围，涵盖资产管理服务、产业投资、电子商务及相关产业三大板块，集团下属数十家行业翘楚级实体企业，通过引进国际化、现代化管理方法及资源，站在国际高度前瞻行业发展，凭借成功的资产管理经验和雄厚的资本运作实力，以及与政府、金融界、法律界的良好合作共赢关系，全方位立体式整合金融机构及企事业单位的投融资信息资源、高新科技企业客户资源、专家学者学院的财智资源、政府资源等，将资本和产业有效结合，开创金融新模式，助力中国实体经济发展。</p>
+        <p></p>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+</div>
+<div class="side-bar">
+  <div class="bar-box"> <a href="javascript:;" class="zhiding"><span></span>
+    <p>置顶</p>
+    </a> <a href="javascript:;" class="kefu"><span></span>
+    <p>咨询</p>
+    </a> </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+  <div class="footer-con">
+    <p class="beian">@2016 YunQueChuangFu</p>
+    <p class="btm-nav"> <a href="" target="_blank">关于我们</a> <i>/<i> <a href="" target="_blank">合作伙伴</a> <i>/<i> <a href="" target="_blank">联系我们</a> </p>
+    <div class="erwm"><img src="images/erweima.jpg" width="100" height="100">
+      <p>官方微信 更多惊喜</p>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript">
+
+$(".kefu").hide();
+$(document).scroll(function(){
+	
+	 var b=window.scrollY;
+	 if(b>400){
+		 $(".zhiding").fadeIn(200);
+		 $(".kefu").fadeIn(200);
+		 }else{
+	     $(".zhiding").fadeOut(200);
+		 $(".kefu").fadeOut(200);
+		 }
+	
+	}).ready(function(e) {
+		$(".zhiding").hide();
+        $(".zhiding").click(function(){
+			$('html,body').animate({'scrollTop':0},500);
+			})//回到顶部
+			
+			
+	$(".bar-box a").mouseover(function(e) {
+    $(this).find("span").hide();
+	$(this).find("p").show();
+});
+
+
+$(".bar-box a").mouseout(function(e) {
+    $(this).find("span").show();
+	$(this).find("p").hide();
+	
+});
+		
+    });	 
+
+</script>
+</body>
+</html>

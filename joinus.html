@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>加入我们-北京云雀孵化网站</title>
+<meta name="Description" content=""/>
+<meta name="Keywords" content=""/>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="head">
+  <div class="logo">
+    <h1><a href="index.html"><img src="images/logo.png" height="50" alt="云雀孵化" title="云雀孵化"></a></h1>
+  </div>
+  <div class="wap-nav-btn" id="nav-btn"></div>
+  <ul class="nav">
+    <li data-menuanchor="page1"><a href="#page1">首页<i></i></a></li>
+    <li><a href="">公司介绍<i></i></a></li>
+    <li><a href="">创孵投资<i></i></a> </li>
+    <li><a href="">孵化项目<i></i></a></li>
+    <li><a href="">活动大赛<i></i></a></li>
+    <li><a href="">孵化服务<i></i></a></li>
+    <li><a href="">资讯<i></i></a></li>
+    <li class="active"><a href="">招贤纳士<i></i></a></li>
+  </ul>
+  </div>
+</header>
+<div class="join-banner"><img src="images/zxns.jpg" width="100%"></div>
+<div class="join-con">
+  <h3>招募令</h3>
+  <div class="join-box">
+    <div class="join-left">
+      <p><strong>岗位名称：</strong>创意文案</p>
+      <p><strong>工作地点：</strong>北京</p>
+      <p style="margin-top:45px;"><strong>工作职责：</strong></p>
+      <p>1.参与品牌策划全过程，配合策划进行品牌、活动创意、媒介文案的策划及撰写。</p>
+      <p>2.配合营销渠道中心进行媒介渠道的拓展和维护，根据媒介属性不同，撰写相关公关稿件，传播内容等。</p>
+      <p>3.负责项目产品文案、广告文案、网络性软文推广活动（事件营销、话题营销等）话题策划，准确把握产品的卖点及宣传点。</p>
+      <p>4.熟悉市场情报、参考素材进行产品搜集和分析，提炼可用观点，制造话题；</p>
+      <p>5.及时反馈市场变动及用户需求，为策划及营销渠道相关人员提供决策支持。</p>
+      <p style="margin-top:45px;"><strong>职位要求：</strong></p>
+      <p>1.3年以上工作经验，2年左右策划文案工作经验</p>
+      <p>2.文字、书面表达能力出众，有渠道整合推广经验</p>
+      <p>3.熟悉网络媒体，关注网络时事， 有想法有创意并熟悉网络平台</p>
+      <p>4.富有激情和创意，具备良好的新闻撰写、广告策划及事件策划能力</p>
+      <p>5.电商或类似平台工作经历者优先</p>
+      <p style="margin-top:45px;"><strong>投递方式：</strong></p>
+      <p>详细个人介绍与简历投递至</p>
+      <p>hr@yunquechuangfu.com</p>
+      <p>邮件标题格式为"职位名-姓名-来自主站"</p>
+    </div>
+    <div class="join-right"><img src="images/zxns2.jpg"></div>
+  </div>
+</div>
+<div class="side-bar">
+  <div class="bar-box"> <a href="javascript:;" class="zhiding"><span></span>
+    <p>置顶</p>
+    </a> <a href="javascript:;" class="kefu"><span></span>
+    <p>咨询</p>
+    </a> </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+  <div class="footer-con">
+    <p class="beian">@2016 YunQueChuangFu</p>
+    <p class="btm-nav"> <a href="" target="_blank">关于我们</a> <i>/<i> <a href="" target="_blank">合作伙伴</a> <i>/<i> <a href="" target="_blank">联系我们</a> </p>
+    <div class="erwm"><img src="images/erweima.jpg" width="100" height="100">
+      <p>官方微信 更多惊喜</p>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript">
+
+$(".kefu").hide();
+$(document).scroll(function(){
+	
+	 var b=window.scrollY;
+	 if(b>400){
+		 $(".zhiding").fadeIn(200);
+		 $(".kefu").fadeIn(200);
+		 }else{
+	     $(".zhiding").fadeOut(200);
+		 $(".kefu").fadeOut(200);
+		 }
+	
+	}).ready(function(e) {
+		$(".zhiding").hide();
+        $(".zhiding").click(function(){
+			$('html,body').animate({'scrollTop':0},500);
+			})//回到顶部
+			
+			
+	$(".bar-box a").mouseover(function(e) {
+    $(this).find("span").hide();
+	$(this).find("p").show();
+});
+
+
+$(".bar-box a").mouseout(function(e) {
+    $(this).find("span").show();
+	$(this).find("p").hide();
+	
+});
+		
+    });	 
+
+</script>
+</body>
+</html>
